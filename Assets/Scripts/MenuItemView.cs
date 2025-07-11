@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using Structures;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,24 +12,27 @@ public class MenuItemView : MonoBehaviour
    [SerializeField] private CanvasGroup _backgroundBloom;
    [SerializeField] private float _bloomFadeDuration;
    
-   [SerializeField] private List<CanvasGroup> _cornerAnimatedElements;
+   [SerializeField] private List<AnimatedCornerStruct> _cornerAnimatedElements;
    [SerializeField] private float _cornersAnimationDuration;
    
    public Button ButtonReference => _button;
+   
+   public bool IsSelected { get; private set; }
 
    public IEnumerator SetSelectionState(bool isSelected)
    {
       _button.interactable = !isSelected;
       
+      IsSelected = isSelected;
+      
       foreach (var corner in _cornerAnimatedElements)
       {
-         corner.transform.DOLocalMove(new Vector3(corner.transform.localPosition.x * -1, corner.transform.localPosition.y * -1, corner.transform.localPosition.z), _cornersAnimationDuration)
-            .OnComplete(() => corner.transform.DOKill());
+         corner.CornerIconRT.DOAnchorPos(new Vector2(corner.CornerIconRT.anchoredPosition.x * -1, corner.CornerIconRT.anchoredPosition.y * -1), _cornersAnimationDuration)
+            .OnComplete(() => corner.CornerIconRT.DOKill());
 
-         corner.DOFade(isSelected ? 1f : 0f, _cornersAnimationDuration)
-            .OnComplete(() => corner.DOKill());
+         corner.CornerIconRT.GetComponent<CanvasGroup>().DOFade(isSelected ? 1f : 0f, _cornersAnimationDuration)
+            .OnComplete(() => corner.CornerIconRT.DOKill());
       }
-
       
       yield return _backgroundBloom.DOFade(isSelected ? 1f : 0f, _bloomFadeDuration)
          .OnComplete(() => _backgroundBloom.DOKill())
@@ -41,9 +45,9 @@ public class MenuItemView : MonoBehaviour
       
       foreach (var corner in _cornerAnimatedElements)
       {
-         corner.transform.localPosition = new Vector3(corner.transform.localPosition.x * -1, corner.transform.localPosition.y * -1, corner.transform.localPosition.z);
+         corner.CornerIconRT.anchoredPosition = new Vector2(corner.CornerIconRT.anchoredPosition.x * -1, corner.CornerIconRT.anchoredPosition.y * -1);
          
-         corner.alpha = isSelected ? 1f : 0f;
+         corner.CornerIconRT.GetComponent<CanvasGroup>().alpha = isSelected ? 1f : 0f;
       }
       
       _backgroundBloom.alpha = isSelected ? 1f : 0f;

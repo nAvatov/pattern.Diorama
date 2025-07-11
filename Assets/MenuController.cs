@@ -26,7 +26,13 @@ public class MenuController : MonoBehaviour
         _controllerCanvasGroup.interactable = false;
         _controllerCanvasGroup.blocksRaycasts = false;
         
-        _menuItems.ForEach(item => item.QuickSetSelectionState(false));
+        _menuItems.ForEach(item =>
+        {
+            if (item.IsSelected)
+            {
+                StartCoroutine(item.SetSelectionState(false));
+            }
+        });
 
         yield return selectedItem.SetSelectionState(true);
         
