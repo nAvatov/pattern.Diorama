@@ -8,6 +8,9 @@ using UnityEngine.UI;
 public class MenuItemView : MonoBehaviour 
 {
    [SerializeField] private Button _button;
+
+   [SerializeField] private Image _icon;
+   [SerializeField] private Color _chosenColor;
    
    [SerializeField] private CanvasGroup _backgroundBloom;
    [SerializeField] private float _bloomFadeDuration;
@@ -27,6 +30,9 @@ public class MenuItemView : MonoBehaviour
       
       foreach (var corner in _cornerAnimatedElements)
       {
+         _icon.DOColor(isSelected ? _chosenColor : Color.white, _cornersAnimationDuration)
+            .OnComplete(() => _icon.DOKill());
+         
          corner.CornerIconRT.DOAnchorPos(new Vector2(corner.CornerIconRT.anchoredPosition.x * -1, corner.CornerIconRT.anchoredPosition.y * -1), _cornersAnimationDuration)
             .OnComplete(() => corner.CornerIconRT.DOKill());
 

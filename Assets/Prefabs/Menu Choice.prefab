@@ -667,6 +667,8 @@ GameObject:
   - component: {fileID: 7031817847570104795}
   - component: {fileID: 7503675867387604218}
   - component: {fileID: 2309076025262673100}
+  - component: {fileID: 5737914743098226964}
+  - component: {fileID: 7987409782926776264}
   m_Layer: 5
   m_Name: Menu Choice
   m_TagString: Untagged
@@ -709,6 +711,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _button: {fileID: 2309076025262673100}
+  _icon: {fileID: 4879039169343137901}
+  _chosenColor: {r: 0.0627451, g: 0.09803922, b: 0.1882353, a: 1}
   _backgroundBloom: {fileID: 1462077023785884310}
   _bloomFadeDuration: 0.7
   _cornerAnimatedElements:
@@ -720,7 +724,7 @@ MonoBehaviour:
     CornerSignMultiplier: {x: 1, y: -1}
   - CornerIconRT: {fileID: 7328452988915538025}
     CornerSignMultiplier: {x: 1, y: 1}
-  _cornersAnimationDuration: 0.7
+  _cornersAnimationDuration: 0.3
 --- !u!114 &2309076025262673100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -765,6 +769,26 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!225 &5737914743098226964
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216330034651687995}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!222 &7987409782926776264
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5216330034651687995}
+  m_CullTransparentMesh: 1
 --- !u!1 &7913412180595644162
 GameObject:
   m_ObjectHideFlags: 0

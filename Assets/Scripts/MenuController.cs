@@ -7,9 +7,11 @@ public class MenuController : MonoBehaviour
 {
     [SerializeField] private CanvasGroup _controllerCanvasGroup;
     [SerializeField] private List<MenuItemView> _menuItems;
+    [SerializeField] private MenuItemView _initialItem;
 
     private void Start()
     {
+        StartCoroutine(SelectItem(_initialItem));
         InitializeItems();
     }
 
@@ -17,26 +19,33 @@ public class MenuController : MonoBehaviour
     {
         foreach (var item in _menuItems)
         {
-            item.ButtonReference.onClick.AddListener(() => StartCoroutine(SelectItem(item)));
+            item.ButtonReference.onClick.AddListener(() =>
+            {
+                Debug.Log("click");
+                StartCoroutine(SelectItem(item));
+            });
         }
     }
 
     private IEnumerator SelectItem(MenuItemView selectedItem)
     {
+        Debug.Log("Routine start");
         _controllerCanvasGroup.interactable = false;
         _controllerCanvasGroup.blocksRaycasts = false;
-        
-        _menuItems.ForEach(item =>
+
+
+        foreach (var item in _menuItems)
         {
             if (item.IsSelected)
             {
-                StartCoroutine(item.SetSelectionState(false));
+                yield return item.SetSelectionState(false);
             }
-        });
+        }
 
         yield return selectedItem.SetSelectionState(true);
         
         _controllerCanvasGroup.interactable = true;
         _controllerCanvasGroup.blocksRaycasts = true;
+        Debug.Log("Routine end");
     }
 }
