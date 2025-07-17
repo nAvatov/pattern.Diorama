@@ -11,8 +11,21 @@ public class MenuController : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(SelectItem(_initialItem));
+        if (OSC_settingsController.Instance == null){
+            new OSC_settingsController(true);
+        }
+
+        SetInitialItem();
+        
         InitializeItems();
+    }
+
+    public void SetInitialItem()
+    {
+        if (_initialItem)
+        {
+            StartCoroutine(SelectItem(_initialItem));
+        }
     }
 
     private void InitializeItems()
@@ -21,7 +34,6 @@ public class MenuController : MonoBehaviour
         {
             item.ButtonReference.onClick.AddListener(() =>
             {
-                Debug.Log("click");
                 StartCoroutine(SelectItem(item));
             });
         }
@@ -29,7 +41,6 @@ public class MenuController : MonoBehaviour
 
     private IEnumerator SelectItem(MenuItemView selectedItem)
     {
-        Debug.Log("Routine start");
         _controllerCanvasGroup.interactable = false;
         _controllerCanvasGroup.blocksRaycasts = false;
 
@@ -44,8 +55,14 @@ public class MenuController : MonoBehaviour
 
         yield return selectedItem.SetSelectionState(true);
         
+        selectedItem.OnSelectionHandler();
+        
         _controllerCanvasGroup.interactable = true;
         _controllerCanvasGroup.blocksRaycasts = true;
-        Debug.Log("Routine end");
+    }
+
+    public void Refresh()
+    {
+        _menuItems.ForEach(item => item.QuickSetSelectionState(false));
     }
 }
