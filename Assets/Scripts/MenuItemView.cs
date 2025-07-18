@@ -61,7 +61,7 @@ public class MenuItemView : MonoBehaviour
    public virtual void OnSelectionHandler()
    { 
       Debug.Log("Sending data");
-      //OSC_settingsController.SendOscMessage(_address, _intValue);
+      OSC_settingsController.SendOscMessage(_address, _intValue);
    }
 
    public void QuickSetSelectionState(bool isSelected)

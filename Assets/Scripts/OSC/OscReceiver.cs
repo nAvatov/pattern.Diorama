@@ -1,48 +1,44 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Plugins.OSC
 {
     public class OscReceiver : MonoBehaviour
     {
+        [SerializeField] private List<CanvasGroup> _controlCanvasGroups;
+
+        private void Start()
+        {
+            CreateOscListeners();
+        }
+
         private void CreateOscListeners()
         {
             var oscSettingsController = new OSC_settingsController(
-                new OSC_MessageController("/H1",
+                new OSC_MessageController("/blockControl",
                     (message) =>
                     {
-                        Debug.Log("H1");
-                        
+                        _controlCanvasGroups.ForEach(control =>
+                        {
+                            if (control.alpha == 1f)
+                            {
+                                control.blocksRaycasts = false;
+                                control.interactable = false;
+                            }
+                        });
                     }),
-                new OSC_MessageController("/V1",
+                new OSC_MessageController("/unblockControl",
                     (message) =>
                     {
-                        Debug.Log("V1");
-                       
-                    }),
-
-                new OSC_MessageController("/H2",
-                    (message) =>
-                    {
-                        Debug.Log("H2");
-                        
-                    }),
-                new OSC_MessageController("/V2",
-                    (message) =>
-                    {
-                        Debug.Log("V2");
-                        
-                    }),
-
-                new OSC_MessageController("/H3",
-                    (message) =>
-                    {
-                        Debug.Log("H3");
-                        
-                    }),
-                new OSC_MessageController("/V3",
-                    (message) =>
-                    {
-                        Debug.Log("V3");
+                        _controlCanvasGroups.ForEach(control =>
+                        {
+                            if (control.alpha == 1f)
+                            {
+                                control.blocksRaycasts = true;
+                                control.interactable = true;
+                            }
+                        });
                     })
             );
         }

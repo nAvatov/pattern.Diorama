@@ -307,6 +307,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _address
+      value: /sea.subInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _intValue
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
       value: 0.3
       objectReference: {fileID: 0}
@@ -617,6 +625,14 @@ PrefabInstance:
     - target: {fileID: 7031817847570104795, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _address
+      value: /land.subInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _intValue
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
@@ -1347,6 +1363,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _address
+      value: /land.subInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _intValue
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
       value: 0.3
       objectReference: {fileID: 0}
@@ -1514,6 +1538,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _address
+      value: /land.subInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _intValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
       value: 0.3
       objectReference: {fileID: 0}
@@ -1673,6 +1705,10 @@ PrefabInstance:
     - target: {fileID: 7031817847570104795, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _address
+      value: /land.subInfo
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
@@ -2285,6 +2321,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _address
+      value: /sea.subInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
       value: 0.3
       objectReference: {fileID: 0}
@@ -2442,6 +2482,14 @@ PrefabInstance:
     - target: {fileID: 7031817847570104795, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _address
+      value: /sea.subInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _intValue
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
@@ -2603,6 +2651,14 @@ PrefabInstance:
     - target: {fileID: 7031817847570104795, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _address
+      value: /sea.subInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _intValue
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
@@ -2831,7 +2887,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 1492, y: -85}
-  m_SizeDelta: {x: 0, y: 50}
+  m_SizeDelta: {x: 95.55, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &788907506
 MonoBehaviour:
@@ -3849,6 +3905,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _address
+      value: /sea.subInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _intValue
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
       value: 0.3
       objectReference: {fileID: 0}
@@ -4408,6 +4472,7 @@ GameObject:
   - component: {fileID: 1603895741}
   - component: {fileID: 1603895740}
   - component: {fileID: 1603895739}
+  - component: {fileID: 1603895742}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -4476,6 +4541,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1603895742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603895738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b50302eb86722704a84fdc3ded400341, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _controlCanvasGroups:
+  - {fileID: 1795627650}
+  - {fileID: 928303206}
+  - {fileID: 203108637}
 --- !u!1 &1622683493
 GameObject:
   m_ObjectHideFlags: 0
@@ -4920,6 +5001,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _address
+      value: /land.subInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _intValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
       value: 0.3
       objectReference: {fileID: 0}
@@ -5162,6 +5251,14 @@ PrefabInstance:
     - target: {fileID: 7031817847570104795, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _address
+      value: /land.subInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _intValue
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
@@ -5527,6 +5624,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _address
+      value: /sea.subInfo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _intValue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
       value: 0.3
       objectReference: {fileID: 0}
@@ -5753,7 +5858,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2309076025262673100, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2309076025262673100, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -5874,6 +5979,10 @@ PrefabInstance:
     - target: {fileID: 7031817847570104795, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
+      propertyPath: _address
+      value: /idle
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
