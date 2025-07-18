@@ -11,10 +11,6 @@ public class MenuController : MonoBehaviour
 
     private void Start()
     {
-        if (OSC_settingsController.Instance == null){
-            new OSC_settingsController(true);
-        }
-
         SetInitialItem();
         
         InitializeItems();
@@ -25,6 +21,9 @@ public class MenuController : MonoBehaviour
         if (_initialItem)
         {
             StartCoroutine(SelectItem(_initialItem));
+            
+            _controllerCanvasGroup.interactable = true;
+            _controllerCanvasGroup.blocksRaycasts = true;
         }
     }
 
@@ -56,6 +55,8 @@ public class MenuController : MonoBehaviour
         yield return selectedItem.SetSelectionState(true);
         
         selectedItem.OnSelectionHandler();
+
+        yield return new WaitForSeconds(0.5f);
         
         _controllerCanvasGroup.interactable = true;
         _controllerCanvasGroup.blocksRaycasts = true;

@@ -21,7 +21,7 @@ namespace Plugins.OSC
                     {
                         _controlCanvasGroups.ForEach(control =>
                         {
-                            if (control.alpha == 1f)
+                            if (Mathf.Approximately(control.alpha, 1f))
                             {
                                 control.blocksRaycasts = false;
                                 control.interactable = false;
@@ -31,9 +31,10 @@ namespace Plugins.OSC
                 new OSC_MessageController("/unblockControl",
                     (message) =>
                     {
+                        Debug.Log("Unblock command");
                         _controlCanvasGroups.ForEach(control =>
                         {
-                            if (control.alpha == 1f)
+                            if (Mathf.Approximately(control.alpha, 1f))
                             {
                                 control.blocksRaycasts = true;
                                 control.interactable = true;

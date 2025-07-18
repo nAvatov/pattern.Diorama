@@ -312,7 +312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _intValue
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
@@ -632,7 +632,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _intValue
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
@@ -1368,7 +1368,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _intValue
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
@@ -1543,7 +1543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _intValue
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
@@ -1708,7 +1708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _address
-      value: /land.subInfo
+      value: /land.subInfoLoop
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
@@ -2322,7 +2322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _address
-      value: /sea.subInfo
+      value: /sea.subInfoLoop
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
@@ -2489,7 +2489,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _intValue
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
@@ -2658,7 +2658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _intValue
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
@@ -3910,7 +3910,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _intValue
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
@@ -4155,9 +4155,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1587035630}
+      - m_Target: {fileID: 1630005520}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: SetInitialItem
+        m_MethodName: Refresh
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4554,9 +4554,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _controlCanvasGroups:
-  - {fileID: 1795627650}
-  - {fileID: 928303206}
-  - {fileID: 203108637}
+  - {fileID: 1587035631}
+  - {fileID: 1897344827}
+  - {fileID: 1630005519}
 --- !u!1 &1622683493
 GameObject:
   m_ObjectHideFlags: 0
@@ -4863,7 +4863,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1587035630}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
-        m_MethodName: SetInitialItem
+        m_MethodName: Refresh
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5006,7 +5006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _intValue
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
@@ -5258,7 +5258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _intValue
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
@@ -5629,7 +5629,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _intValue
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7503675867387604218, guid: b918ae117246daf478223809556bd5f9, type: 3}
       propertyPath: _bloomFadeDuration
@@ -5774,6 +5774,7 @@ GameObject:
   - component: {fileID: 2108679565}
   - component: {fileID: 2108679567}
   - component: {fileID: 2108679566}
+  - component: {fileID: 2108679568}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -5795,10 +5796,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 985322127}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 2880, y: 1999.9999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2108679566
 MonoBehaviour:
@@ -5838,6 +5839,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2108679564}
   m_CullTransparentMesh: 1
+--- !u!114 &2108679568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108679564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86710e43de46f6f4bac7c8e50813a599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AspectMode: 0
+  m_AspectRatio: 1.44
 --- !u!224 &2108808716 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8278720858756873097, guid: b918ae117246daf478223809556bd5f9, type: 3}
